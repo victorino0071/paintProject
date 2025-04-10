@@ -1,0 +1,43 @@
+
+.DownloadButton {
+    height: 15rem;
+    width: 40rem;
+    background: linear-gradient(135deg, #6e7cfa, #4a5ef7);
+    color: white;
+    font-size: 5rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 120px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.DownloadButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.DownloadButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.DownloadButton:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.DownloadButton:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

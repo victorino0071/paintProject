@@ -1,0 +1,73 @@
+.divConfig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Canvas {
+    margin: 7rem;
+    display: grid; /* Ajusta os itens dinamicamente */
+    gap: 0; /* Remove espaços entre os itens */
+    align-content: center;
+    justify-content: center; /* Alinha o grid horizontalmente */
+}
+
+.SizeConfig {
+  padding: 10px 15px;
+  margin: 2rem;
+  font-size: 4rem;
+  border: 2px solid #bbb;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 18rem;
+  height: 4rem;
+}
+
+.SizeConfig:hover {
+  border-color: #64B5F6;
+}
+
+.SizeConfig:focus {
+  border-color: #2196F3;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.6);
+}
+
+.Resize {
+  height: 6rem;
+  width: 25rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Resize:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Resize:active {
+  transform: scale(0.95);
+  background: linear-gradient(90deg, #4b0ea0, #1a5ccf);
+}
+
+.ResizeConfig{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+}
+

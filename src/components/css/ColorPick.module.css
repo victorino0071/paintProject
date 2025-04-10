@@ -1,0 +1,28 @@
+.RecentColor {
+    margin: 0.5rem;
+    width: 10rem; /* Tamanho do botão */
+    height: 10rem;
+    border-radius: 50%; /* Torna o botão redondo */
+    border: 3px solid #ddd; /* Borda elegante */
+    background-color: #ff5733; /* Cor inicial (modifique conforme necessário) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Efeito de sombra */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza as mudanças no estilo */
+}
+  
+.RecentColor:hover {
+    transform: scale(1.1); /* Amplia o botão ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Intensifica a sombra */
+}
+  
+.RecentColor:active {
+    transform: scale(0.95); /* Dá a sensação de pressionado */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+}
+
+.RecentColorPick{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+

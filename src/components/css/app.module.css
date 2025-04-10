@@ -1,0 +1,22 @@
+.App{
+    margin: auto;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Config {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Drawing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
